@@ -1,0 +1,417 @@
+/* das ist ein kommentar */
+
+/* das ist
+ein kommentar
+über mehrere Zeilen
+*/
+
+* {
+	margin: 0;		/* Außenabstand auf 0 setzen */
+	padding: 0;		/* Innenabstand auf 0 setzen */
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;		/* Schrift von Google Fonts */
+}
+
+img {
+	max-width: 100%;
+}
+
+ul,
+ol {
+	margin-left: 20px;
+}
+
+a {
+	color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	margin-top: 20px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	color: #000;
+	margin-top: 20px;
+}
+
+/* Tabellen */
+
+table {
+	border-collapse: collapse;
+	border: 2px solid: 000;
+}
+
+tr {
+	background-color: #c3cd2d;
+}
+
+tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+/* Video */
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.video iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.buttons a,
+.buttons a.button-2:hover {
+	display: inline-block;
+	padding: 10px;
+	background-color: #c3cd2d;
+	color: #000;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+}
+
+.buttons a.button-1:hover,
+.buttons a.button-2 {
+	background-color: #000;
+	color: #c3cd2d;
+}
+
+/* Spalten */
+
+.columns > div {
+	margin-bottom: 20px;
+	border: 1px solid #000;
+}
+
+.columns > div > :last-child {
+	margin-bottom: 0;
+}
+
+.colum-with-padding {
+	padding: 10px;
+}
+
+.columns > div > img {
+	display: block;
+}
+
+/* Grundgerüst Webseite */
+
+body {
+	color: #777;
+	background-color: #efefef;
+}
+
+#page {
+	background-color: #ffffff;
+}
+
+header,
+footer {
+	padding: 20px 50px;
+	background-color: #f4f6d5;
+}
+
+section,
+aside {
+	padding: 20px 50px;
+}
+
+#daysUntilLastCourse {
+	padding: 20px;
+	background-color: #f4f6d5;
+}
+
+
+/* Header mit Logo und Navigation */
+
+#logo {
+	max-width: 50%;
+}
+
+header div {
+	position: relative;
+}
+
+#menu-icon {
+	top: 0;
+	right: 0;
+	width: 50px;
+	position: absolute;
+}
+
+#metanavi,
+#mainnavi {
+	margin-left: 0;
+	display: none;
+	list-style-type: none;
+}
+
+#mainnavi {
+	margin-top: 20px;
+}
+
+#mainnavi.enabled {
+	display: block;
+}
+
+#metanavi a,
+#mainnavi a {
+	background-color: #FFF;
+	border-bottom: 1px solid #000;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+
+
+/* Footer */
+
+footer div:first-child {
+	padding: 20px 0;
+	margin: 20px 0;
+	border-bottom: 1px solid #000;
+}
+footer form {
+	padding: 20px;
+	background-color: #c3cd2d;
+}
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+form input,
+form textarea {
+	padding: 5px;
+	width: 100%;
+	border: 0 none;
+}
+form textarea {
+	height: 150px;
+}
+form input[type="button"] {
+	cursor: pointer;
+	font-size: 20px;
+	background-color: #AAA;
+}
+form input[type="button"]:hover {
+	background-color: #000;
+	color: #AAA;
+}
+
+
+/* Formular-Fehlermeldungen */
+
+#error-messages {
+	padding: 20px;
+	border: 2px solid #F00;
+	color: #F00;
+	display: none;
+}
+#error-messages.show {
+	display: block;
+}
+label.error {
+	color: #F00;
+}
+
+
+
+
+/* Social Media */
+
+footer div:last-child {
+	text-align: center;
+}
+#socialmedia,
+#metanavi2 {
+	list-style-type: none;
+	margin-top: 10px;
+}
+#metanavi2 {
+	margin: 50px 0;
+}
+#socialmedia li,
+#metanavi2 li {
+	display: inline-block;
+}
+#socialmedia img {
+	width: 60px;
+}
+#socialmedia a,
+#metanavi2 a {
+	margin: 0 10px;
+	text-decoration: none;
+}
+#metanavi2 a:hover {
+	text-decoration: underline;
+}
+
+
+/* nach oben Button */
+
+#scrollToTop {
+	display: none;
+}
+
+/*
+ab hier beginnt das CSS für Displays,
+die größer als 768px (Breite) sind 
+
+Die Zeile mit @media nennt man "media query"
+*/
+
+@media screen and (min-width: 768px) {
+.columns  {
+	display: flex
+			}
+.columns > div {
+	flex: 1;
+	margin-left: 20px;
+}
+.columns > div:first-child {
+	margin-left: 0px;
+}
+	#page {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	header {
+		display: flex;
+	}
+	header div:first-child {
+		flex: 0 0 220px;
+		padding-right: 20px;
+	}
+	header div:last-child {
+		flex: 1;
+	}
+
+	#logo {
+		max-width: 100%;
+	}
+	#menu-icon {
+		display: none;
+	}
+	#metanavi,
+	#mainnavi {
+		display: block;
+	}
+	#metanavi li,
+	#mainnavi li {
+		display: inline-block;
+	}
+	#metanavi {
+		text-align: right;
+	}
+	#metanavi a {
+		font-size: 13px;
+		border: 0 none;
+		background-color: transparent;
+	}
+	#metanavi a:hover {
+		text-decoration: underline;
+	}
+
+	#mainnavi {
+		margin-top: 25px;
+	}
+	#mainnavi a {
+		border: 0 none;
+		border-radius: 10px;
+	}
+	#mainnavi li {
+		margin-right: 20px;
+	}
+	#mainnavi a:hover {
+		background-color: #DDD;
+	}
+
+
+	/* Seitenspalte */
+
+	main {
+		display: flex;
+	}
+	section {
+		flex: 1;
+		margin: 0 20px 0 0;
+	}
+	aside {
+		flex: 0 0 250px;
+		background-color: #DDD;
+	}
+
+
+	/* Footer */
+
+	footer {
+		display: flex;
+	}
+	footer div {
+		flex: 1;
+	}
+	footer div:first-child {
+		border-bottom: 0 none;
+	}
+	footer div:last-child {
+		text-align: right;
+		padding-top: 65px;
+	}
+	#socialmedia img {
+		width: 40px;
+	}
+	#socialmedia img:hover {
+		transform: rotate(180deg);
+		transition: 0.5s;
+	}
+
+	/* nach oben Button */
+
+	#scrollToTop {
+		bottom: 0;
+		right: 50px;
+		position: fixed;
+		color: #000;
+		background-color: #c3cd2d;
+		padding: 10px;
+	}
+
+	#scrollToTop:hover {
+		cursor: pointer;
+		background-color: #000;
+		color: #FFF;
+	}
+	#scrollToTop.show {
+		display: block;
+	}
+
+}
+
+/* hiernach nichts mehr schreiben */

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>Über uns - Webprojekt programmieren.de</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<!-- das ist ein kommentar -->
+
+<!-- 
+	das ist auch ein kommentar,
+	der über mehrere Zeilen geht
+-->
+
+<body>
+	<div id="page">
+		<header>
+			<div>
+				<a href="index.html">
+					<img id="logo" src="img/logo.png" alt="">
+				</a>
+				<img id="menu-icon" src="img/icon-hamburger.png" alt="">
+			</div>
+
+			<div>
+				<!-- Metanavigation -->
+				<ul id="metanavi">
+					<li>
+						<a href="impressum.html">Impressum</a>
+					</li>
+					<li>
+						<a href="datenschutz.html">Datenschutz</a>
+					</li>
+				</ul>
+
+				<!-- Hauptnavigation -->
+				<ul id="mainnavi">
+					<li>
+						<a href="ueber-uns.html">Über uns</a>
+					</li>
+					<li>
+						<a href="leistungen.html">Leistungen</a>
+					</li>
+					<li>
+						<a href="kontakt.html">Kontakt</a>
+					</li>
+				</ul>
+
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<h2>Über uns</h2>
+				das ist der inhalt
+			</section>
+
+			<aside>
+				<h3>Adresse</h3>
+				<p>Muster AG<br>
+					Musterstraße 1<br>
+					12345 Musterstadt
+				</p>
+
+				<h3>Telefon</h3>
+				<p>0123-45678</p>
+
+				<div id="daysUntilLastCourse">wird berechnet ...</div>
+			</aside>
+		</main>
+
+		<footer>
+			<div>
+				<h2>Nehmen Sie Kontakt mit uns auf</h2>
+				<form action="#">
+					<p id="error-messages"></p>
+					<label>
+						Ihre E-Mail<br>
+						<input type="email" name="user-mail">
+					</label>
+
+					<label>
+						Ihre Nachricht<br>
+						<textarea name="user-message"></textarea>
+					</label>
+
+					<input id="submit-button" type="button" value="absenden">
+					<!--<button id="form-button">absenden</button>-->
+				</form>
+			</div>
+
+			<div>
+				<p>Folgen Sie uns auf:</p>
+
+				<ul id="socialmedia">
+					<li>
+						<a href="https://www.youtube.com/user/SEIBERTMEDIA" target="_blank"><img src="img/icon-youtube.png" alt=""></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/seibertmedia" target="_blank"><img src="img/icon-twitter.png" alt=""></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/SeibertMedia/" target="_blank"><img src="img/icon-instagram.png" alt=""></a>
+					</li>
+				</ul>
+
+				<ul id="metanavi2">
+					<li>
+						<a href="impressum.html">Impressum</a>
+					</li>
+					<li>
+						<a href="datenschutz.html">Datenschutz</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<div id="scrollToTop">nach oben</div>
+
+	</div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
